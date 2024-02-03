@@ -1,0 +1,107 @@
+/*Project Section*/
+#projects .services{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#projects .section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#projects .sectio-title span{
+    color: crimson;
+}
+#projects .project-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#projects .project-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(img/photo_2024-01-19_20-38-51.jpg );
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#projects .project-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%,   #485563 100%);
+    opacity: .8;
+    z-index: -1;
+}
+#projects .project-bottom .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+#projects .project-item h2{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#projects .project-item p{
+    color: white;
+}
+/*EndProject Section*/
+
+
+
+    <!--Project Section-->
+    <section id="projects">
+        <div class="services container">
+            <div class="project-top">
+                <h1 class="section-title">Proj<span>e</span>cts</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="project-bottom"></div>
+                <div class="project-item">
+                    <div class="icon"><img src="data:image/png;base64,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">
+                    </div>
+                    <h2>Project 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="project-item">
+                    <div class="icon"><img src="data:image/png;base64,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">
+                    </div>
+                    <h2>Project 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="project-item">
+                    <div class="icon"><img src="data:image/png;base64,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">
+                    </div>
+                    <h2>Project 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Project Section-->
